@@ -166,13 +166,21 @@ const beatles = {
   ]
 };
 
-// Paul McCartney was in the Beatles from 1960 to 1970. He was born in 1942. He contributed heavily to the Magical Myster Tour Album.
+//console log Paul McCartney was in the Beatles from 1960 to 1970. He was born in 1942. He contributed heavily to the Magical Myster Tour Album.
 
-//  for (let i = 0; i < beatles.members.length; i++) {
-//  if (beatles.members[i] === "Paul McCartney") {
-//  console.log(`${members[i].name} was in the Beatles from ${history.formed} to ${history.disbanded}. He was born in ${members[i].birth}. He contributed heavily to the ${beatles.album[3]}` Album.)
+for (let i = 0; i < beatles.members.length; i++) {
+  if (beatles.members[i].name === "Paul McCartney") {
+    console.log(
+      `${beatles.members[i].name} was in the Beatles from ${
+        beatles.history.formed
+      } to ${beatles.history.disbanded}. He was born in ${
+        beatles.members[i].birth
+      }. He contributed heavily to the ${beatles.albums[3]} album.`
+    );
+  }
+}
+//   ${history.disbanded}. He was born in ${members[i].birth}. He contributed heavily to the ${beatles.album[3]}` Album.)
 // }
-//  }
 
 // function sayHello() {
 //     console.log("hello")
